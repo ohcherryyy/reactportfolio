@@ -1,13 +1,216 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.gridlayout {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: auto 100vh auto 92vh;
+}
+.pos {
+  height: 100vh;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  position: fixed;
+  /* border-bottom: #acacac solid 1px; */
+  height: 5vh;
+  width: 100%;
+  align-content: center;
+  justify-content: flex-end;
+  display: flex;
+  padding: 50px;
+}
+
+.switchlan {
+  font-size: 100%;
+  color: #acacac;
+  margin: 30px;
+  text-align: right;
+  flex: 2;
+}
+
+.switchlan a {
+  color: #8b8b8b;
+  text-decoration: none;
+}
+
+.switchlan a:hover {
+  color: #8b8b8b;
+  text-shadow: #8b8b8b 0.1px 0 0, #8b8b8b 0 0.1px 0, #8b8b8b -0.1px 0 0,
+    #8b8b8b 0 -0.1px 0;
+  text-decoration: none;
+}
+
+.titleicon {
+  vertical-align: baseline;
+  width: 8%;
+}
+
+.topbanner {
+  text-align: center;
+  margin: auto;
+  width: 70%;
+}
+
+.bannertext {
+  letter-spacing: 2px;
+  color: #888888;
+  font-size: 300%;
+  margin-bottom: 20px;
+}
+
+.bannertext a {
+  color: #888888;
+  text-decoration: none;
+}
+
+.bannertext a:hover {
+  color: #888888;
+  text-decoration: none;
+}
+
+.shortinfo {
+  color: #acacac;
+  font-size: 110%;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button div:first-child{
+  margin-right: 50px;
+}
+.btnstyle {
+  border: 2px solid #888888;
+  height: 50px;
+  width: 110px;
+  border-radius: 2em;
+  font-size: 100%;
+  letter-spacing: 2px;
+  background-color: transparent;
+  color: #888888;
+}
+.btnstyle:hover {
+  border: 2px solid #888888;
+  height: 50px;
+  width: 110px;
+  border-radius: 2em;
+  font-size: 100%;
+  letter-spacing: 2px;
+  background-color: #ddddddb6;
+  color: #4b4b4b;
+}
+
+
+.content {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  /* height:300vh; */
+  display: block;
+  padding: 1px;
+}
+
+.aboutme {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  height: 92vh;
+  display: flex;
+  padding: 1px;
+  text-align: center;
+  align-items: center;
+}
+
+.myinfo {
+  width: 350px;
+  margin: auto;
+  max-width: 450px;
+}
+
+.myinfo .row{
+  overflow: hidden;
+}
+
+.contactinfo{
+  font-size: 105%;
+  color: #8b8b8b;
+}
+
+.mail{
+  padding: 5px;
+}
+
+.imgrounded {
+  width: 160px;
+  height: 160px;
+  margin-left: 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 100px;
+  background: url("../public/resources/selfie.JPG");
+  background-repeat: no-repeat;
+  background-size: auto 160px;
+}
+.footer {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  padding: 15px;
+  height: 0.5vh;
+  border-top: 1px solid #acacac;
+}
+
+footer p{
+  font-size: 90%;
+  color: #acacac;
+}
+
+footer .row{
+  padding: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: none;
 }

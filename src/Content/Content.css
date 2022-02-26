@@ -1,0 +1,40 @@
+.imgtitle {
+  font-size: 120%;
+  color: #8b8b8b;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.description {
+  font-size: 100%;
+  color: #8b8b8b;
+  letter-spacing: 1px;
+  text-align: left;
+  padding-top: 40px;
+  letter-spacing: 1px;
+}
+.descriptionstrong {
+  font-size: 110%;
+  color: #287dfa;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.compete {
+  font-size: 100%;
+  color: #8b8b8b;
+  padding-top: 10px;
+  text-align: left;
+  list-style: none;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.proimg{
+  margin-bottom: 80px;
+}
+
+.footer p{
+    font-size: 90%; 
+    color: #acacac
+}
