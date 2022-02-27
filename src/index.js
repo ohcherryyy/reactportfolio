@@ -13,7 +13,7 @@ const Wrapper = ({children}) => {
 }
 
 ReactDOM.render(
-  <Router basename="/build">
+  <Router basename={process.env.PUBLIC_URL}>
     <Wrapper>
       <App />
     </Wrapper>
