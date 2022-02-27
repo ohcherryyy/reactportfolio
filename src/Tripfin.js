@@ -1,18 +1,18 @@
-import React, { Component, Fragment } from "react";
-import Header from "./Content/Header";
-import Img from "./Content/Image";
-import Nav from "./Content/Nav";
-import "./Content/Content.css";
-import "./Portfolio.css";
-import Titleimg from "./Content/Titleimg";
-import Work from "./Work";
-import { Link } from "react-router-dom";
-import Footer from "./Content/Footer";
-import "bootstrap/dist/css/bootstrap.css";
+import React, { Component, Fragment } from "react"
+import Header from "./Content/Header"
+import Img from "./Content/Image"
+import Nav from "./Content/Nav"
+import "./Content/Content.css"
+import "./Portfolio.css"
+import Titleimg from "./Content/Titleimg"
+import Work from "./Work"
+import { Link } from "react-router-dom"
+import Footer from "./Content/Footer"
+import "bootstrap/dist/css/bootstrap.css"
 
 class Trip extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       navtitle: [
         { title: "Background", href: "#bg" },
@@ -24,16 +24,16 @@ class Trip extends Component {
         { title: "Prototyping", href: "#prototype" },
         { title: "Summary", href: "#final" },
       ],
-      href:["bg","problem","research","prep","workflow","wireframe","prototype","final"]
-    };
+      href: ["bg", "problem", "research", "prep", "workflow", "wireframe", "prototype", "final"]
+    }
   }
 
-  render() {
+  render () {
     return (
       <div>
-        <Header img="../resources/tripfin/tripbanner.png" />
+        <Header img={process.env.PUBLIC_URL + "/resources/tripfin/tripbanner.png"} />
         <div className="gridLayout">
-          <Nav title={this.state.navtitle} href={this.state.href}/>
+          <Nav title={this.state.navtitle} href={this.state.href} />
           <div className="container majorcontent">
             <div className="content">
               <div className="introduction">
@@ -66,7 +66,7 @@ class Trip extends Component {
               <div className="row">
                 <Img
                   title="Current Situation"
-                  img="../resources/tripfin/现状.png"
+                  img={process.env.PUBLIC_URL + "/resources/tripfin/现状.png"}
                   width={800}
                 />
               </div>
@@ -123,7 +123,7 @@ class Trip extends Component {
                 {"\n"}
                 <Img
                   title="Voucher Process"
-                  img="../resources/tripfin/couponprocess-en.png"
+                  img={process.env.PUBLIC_URL + "/resources/tripfin/couponprocess-en.png"}
                   width={1000}
                 />
                 {"\n"}
@@ -131,7 +131,7 @@ class Trip extends Component {
                 {"\n"}
                 <Img
                   title="Homepage for newcomers"
-                  img="../resources/tripfin/homepage.png"
+                  img={process.env.PUBLIC_URL + "/resources/tripfin/homepage.png"}
                   width={900}
                 />
                 <section id="research">
@@ -141,7 +141,7 @@ class Trip extends Component {
                 <div className="row">
                   <div className="col-md-12">
                     <img
-                      src="../resources/tripfin/competitors.png"
+                      src={process.env.PUBLIC_URL + "/resources/tripfin/competitors.png"}
                       style={{ maxWidth: 900 + "px" }}
                     />
                   </div>
@@ -156,7 +156,7 @@ class Trip extends Component {
                       characteristics are summarized.
                     </p>
                     <img
-                      src="../resources/tripfin/competitorfeat-en.png"
+                      src={process.env.PUBLIC_URL + "/resources/tripfin/competitorfeat-en.png"}
                       className="col-md-12"
                     />
                   </div>
@@ -224,7 +224,7 @@ class Trip extends Component {
                       </p>
                       {"\n"}
                       <img
-                        src="../resources/tripfin/cautious-en.png"
+                        src={process.env.PUBLIC_URL + "/resources/tripfin/cautious-en.png"}
                         className="col-md-12"
                         style={{ maxWidth: 1000 + "px" }}
                       />
@@ -232,7 +232,7 @@ class Trip extends Component {
                     <Titleimg
                       title="UX workflow"
                       id="workflow"
-                      img="../resources/tripfin/workflow-en.png"
+                      img={process.env.PUBLIC_URL + "/resources/tripfin/workflow-en.png"}
                       width={1000}
                     />
                     <section id="wireframe">
@@ -244,7 +244,7 @@ class Trip extends Component {
                     <div className="row" style={{ textAlign: "center" }}>
                       <div className="col-md-5">
                         <img
-                          src="../resources/tripfin/mainpage.png"
+                          src={process.env.PUBLIC_URL + "/resources/tripfin/mainpage.png"}
                           className="col-md-12 img-responsive"
                           style={{
                             maxWidth: 250 + "px",
@@ -257,7 +257,7 @@ class Trip extends Component {
                       {"\n"}
                       <div className="col-md-7">
                         <img
-                          src="../resources/tripfin/maininfo-en.png"
+                          src={process.env.PUBLIC_URL + "/resources/tripfin/maininfo-en.png"}
                           className="col-md-12 img-responsive"
                           style={{
                             maxWidth: 330 + "px",
@@ -273,7 +273,7 @@ class Trip extends Component {
                     <div className="row" style={{ textAlign: "left" }}>
                       <div className="col-md-4">
                         <img
-                          src="../resources/tripfin/双倍加息售罄.png"
+                          src={process.env.PUBLIC_URL + "/resources/tripfin/双倍加息售罄.png"}
                           className="col-md-12 img-responsive"
                           style={{
                             maxWidth: 280 + "px",
@@ -283,7 +283,7 @@ class Trip extends Component {
                       </div>
                       <div className="col-md-4">
                         <img
-                          src="../resources/tripfin/产品售罄.png"
+                          src={process.env.PUBLIC_URL + "/resources/tripfin/产品售罄.png"}
                           className="col-md-12 img-responsive"
                           style={{ maxWidth: 280 + "px" }}
                         />
@@ -315,7 +315,7 @@ class Trip extends Component {
                     <div className="row" style={{ textAlign: "center" }}>
                       <div className="col-md-6">
                         <img
-                          src="../resources/tripfin/屏蔽策略.png"
+                          src={process.env.PUBLIC_URL + "/resources/tripfin/屏蔽策略.png"}
                           className="col-md-12 img-responsive"
                           style={{ maxWidth: 280 + "px" }}
                         />
@@ -351,7 +351,7 @@ class Trip extends Component {
                     <div className="row" style={{ textAlign: "center" }}>
                       <div className="col-md-12">
                         <img
-                          src="../resources/tripfin/first-en@2x.png"
+                          src={process.env.PUBLIC_URL + "/resources/tripfin/first-en@2x.png"}
                           className="col-md-12 img-responsive"
                         />
                       </div>
@@ -363,7 +363,7 @@ class Trip extends Component {
                     <div className="row" style={{ textAlign: "center" }}>
                       <div className="col-md-12">
                         <img
-                          src="../resources/tripfin/second-en@2x.png"
+                          src={process.env.PUBLIC_URL + "/resources/tripfin/second-en@2x.png"}
                           className="col-md-12 img-responsive"
                         />
                       </div>
@@ -372,7 +372,7 @@ class Trip extends Component {
                     <div className="row" style={{ textAlign: "center" }}>
                       <div className="col-md-12">
                         <img
-                          src="../resources/tripfin/third-en@2x.png"
+                          src={process.env.PUBLIC_URL + "/resources/tripfin/third-en@2x.png"}
                           className="col-md-12 img-responsive"
                         />
                       </div>
@@ -386,14 +386,14 @@ class Trip extends Component {
                     <div className="row">
                       <div className="col-md-6">
                         <img
-                          src="../resources/tripfin/IMG_5743.JPG"
+                          src={process.env.PUBLIC_URL + "/resources/tripfin/IMG_5743.JPG"}
                           className="col-md-12 img-responsive"
                           style={{ maxWidth: 250 + "px" }}
                         />
                       </div>
                       <div className="col-md-6">
                         <img
-                          src="../resources/tripfin/IMG_5745.JPG"
+                          src={process.env.PUBLIC_URL + "/resources/tripfin/IMG_5745.JPG"}
                           className="col-md-12 img-responsive"
                           style={{ maxWidth: 250 + "px" }}
                         />
@@ -460,8 +460,8 @@ class Trip extends Component {
         </div>
         <Footer />
       </div>
-    );
+    )
   }
 }
 
-export default Trip;
+export default Trip

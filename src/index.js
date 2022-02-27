@@ -1,7 +1,7 @@
 import React,{useLayoutEffect} from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import { HashRouter as Router,useLocation } from "react-router-dom";
+import { BrowserRouter as Router,useLocation } from "react-router-dom";
 import App from "./App";
 
 const Wrapper = ({children}) => {
@@ -13,7 +13,7 @@ const Wrapper = ({children}) => {
 }
 
 ReactDOM.render(
-  <Router>
+  <Router basename="/build">
     <Wrapper>
       <App />
     </Wrapper>

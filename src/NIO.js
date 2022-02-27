@@ -1,21 +1,21 @@
-import React, { Component } from "react";
-import Header from "./Content/Header";
-import Img from "./Content/Image";
-import Nav from "./Content/Nav";
-import "./Content/Content.css";
-import "./Portfolio.css";
-import Titleimg from "./Content/Titleimg";
-import Work from "./Work";
-import { Link } from "react-router-dom";
-import Footer from "./Content/Footer";
-import "bootstrap/dist/css/bootstrap.css";
-import Imgleft from "./Content/Imgleft";
-import Imgright from "./Content/Imgright";
-import Imglefttwo from "./Content/Imglefttwo";
+import React, { Component } from "react"
+import Header from "./Content/Header"
+import Img from "./Content/Image"
+import Nav from "./Content/Nav"
+import "./Content/Content.css"
+import "./Portfolio.css"
+import Titleimg from "./Content/Titleimg"
+import Work from "./Work"
+import { Link } from "react-router-dom"
+import Footer from "./Content/Footer"
+import "bootstrap/dist/css/bootstrap.css"
+import Imgleft from "./Content/Imgleft"
+import Imgright from "./Content/Imgright"
+import Imglefttwo from "./Content/Imglefttwo"
 
 class Nio extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       navtitle: [
         { title: "Value", href: "#bg" },
@@ -26,13 +26,13 @@ class Nio extends Component {
         { title: "Prototyping", href: "#prototype" },
       ],
       href: ["bg", "problem", "prep", "workflow", "wireframe", "prototype"],
-    };
+    }
   }
 
-  render() {
+  render () {
     return (
       <div>
-        <Header img="../resources/senseparking/parkingbanner.png" />
+        <Header img={process.env.PUBLIC_URL + "/resources/senseparking/parkingbanner.png"} />
         <div className="gridLayout">
           <Nav title={this.state.navtitle} href={this.state.href} />
           <div className="container majorcontent">
@@ -77,33 +77,33 @@ class Nio extends Component {
               <Titleimg
                 title="Define"
                 id="problem"
-                img="../resources/senseparking/moodboard.png"
+                img={process.env.PUBLIC_URL + "/resources/senseparking/moodboard.png"}
                 width={1200}
               />
               <section id="prep">
                 <h2 className="title">Structure</h2>
                 <Img
                   title="Function diagram"
-                  img="../resources/senseparking/structure.png"
+                  img={process.env.PUBLIC_URL + "/resources/senseparking/structure.png"}
                   width={900}
                 />
                 <Img
                   title="Experience loop"
-                  img="../resources/senseparking/userexp.png"
+                  img={process.env.PUBLIC_URL + "/resources/senseparking/userexp.png"}
                   width={1000}
                 />
               </section>
               <Titleimg
                 title="Business process"
                 id="workflow"
-                img="../resources/senseparking/process.png"
+                img={process.env.PUBLIC_URL + "/resources/senseparking/process.png"}
                 width={800}
               />
 
               <section id="wireframe">
                 <h2 className="title">Wireframe</h2>
 
-                <div className="row" style={{ textAlign: "center",marginBottom:30+"px" }}>
+                <div className="row" style={{ textAlign: "center", marginBottom: 30 + "px" }}>
                   <div className="col-md-12">
                     <p className="description">
                       Notifications(including entrances, departures, payment
@@ -113,14 +113,14 @@ class Nio extends Component {
 
                   <div className="col-md-3">
                     <img
-                      src="../resources/senseparking/firstnote.png"
+                      src={process.env.PUBLIC_URL + "/resources/senseparking/firstnote.png"}
                       className="col-md-12 img-responsive"
                       style={{ maxWidth: 450 + "px" }}
                     />
                   </div>
                   <div className="col-md-3">
                     <img
-                      src="../resources/senseparking/entrance.png"
+                      src={process.env.PUBLIC_URL + "/resources/senseparking/entrance.png"}
                       className="col-md-12 img-responsive"
                       style={{ maxWidth: 450 + "px" }}
                     />
@@ -128,21 +128,21 @@ class Nio extends Component {
 
                   <div className="col-md-3">
                     <img
-                      src="../resources/senseparking/aftpaynote.png"
+                      src={process.env.PUBLIC_URL + "/resources/senseparking/aftpaynote.png"}
                       className="col-md-12 img-responsive"
                       style={{ maxWidth: 450 + "px" }}
                     />
                   </div>
                   <div className="col-md-3">
                     <img
-                      src="../resources/senseparking/out.png"
+                      src={process.env.PUBLIC_URL + "/resources/senseparking/out.png"}
                       className="col-md-12 img-responsive"
                       style={{ maxWidth: 450 + "px" }}
                     />
                   </div>
                 </div>
 
-                <div className="row" style={{ textAlign: "center",marginBottom:30+"px" }}>
+                <div className="row" style={{ textAlign: "center", marginBottom: 30 + "px" }}>
                   <div className="col-md-12">
                     <p className="description">
                       Notifications(when payment is ready, timing out,
@@ -152,14 +152,14 @@ class Nio extends Component {
 
                   <div className="col-md-3">
                     <img
-                      src="../resources/senseparking/leavingnote.png"
+                      src={process.env.PUBLIC_URL + "/resources/senseparking/leavingnote.png"}
                       className="col-md-12 img-responsive"
                       style={{ maxWidth: 400 + "px" }}
                     />
                   </div>
                   <div className="col-md-3">
                     <img
-                      src="../resources/senseparking/leaving-autopay.png"
+                      src={process.env.PUBLIC_URL + "/resources/senseparking/leaving-autopay.png"}
                       className="col-md-12 img-responsive"
                       style={{ maxWidth: 400 + "px" }}
                     />
@@ -167,14 +167,14 @@ class Nio extends Component {
 
                   <div className="col-md-3">
                     <img
-                      src="../resources/senseparking/leaving-autopaysuc.png"
+                      src={process.env.PUBLIC_URL + "/resources/senseparking/leaving-autopaysuc.png"}
                       className="col-md-12 img-responsive"
                       style={{ maxWidth: 400 + "px" }}
                     />
                   </div>
                   <div className="col-md-3">
                     <img
-                      src="../Resources/senseparking/payagain.png"
+                      src={process.env.PUBLIC_URL + "/resources/senseparking/payagain.png"}
                       className="col-md-12 img-responsive"
                       style={{ maxWidth: 400 + "px" }}
                     />
@@ -182,12 +182,12 @@ class Nio extends Component {
                 </div>
                 <Img
                   title="Searching destinations page"
-                  img="../resources/senseparking/searchpage.png"
+                  img={process.env.PUBLIC_URL + "/resources/senseparking/searchpage.png"}
                   width={800}
                 />
                 <Img
                   title="Billing page"
-                  img="../resources/senseparking/paypage.png"
+                  img={process.env.PUBLIC_URL + "/resources/senseparking/paypage.png"}
                   width={800}
                 />
               </section>
@@ -208,7 +208,7 @@ class Nio extends Component {
                       support to sense parking.
                     </p>
                   }
-                  img="../resources/senseparking/mapsearch.gif"
+                  img={process.env.PUBLIC_URL + "/resources/senseparking/mapsearch.gif"}
                   width={400}
                 />
                 <Imgleft
@@ -224,7 +224,7 @@ class Nio extends Component {
                       process.
                     </p>
                   }
-                  img="../resources/senseparking/registration.gif"
+                  img={process.env.PUBLIC_URL + "/resources/senseparking/registration.gif"}
                   width={400}
                 />
                 <Imgright
@@ -235,7 +235,7 @@ class Nio extends Component {
                       payment page.
                     </p>
                   }
-                  img="../resources/senseparking/registration-autopay.gif"
+                  img={process.env.PUBLIC_URL + "/resources/senseparking/registration-autopay.gif"}
                   width={400}
                 />
                 <Imgleft
@@ -252,13 +252,13 @@ class Nio extends Component {
                       there will be a direct deduction withou any action.
                     </p>
                   }
-                  img="../resources/senseparking/leaving-auto.gif"
+                  img={process.env.PUBLIC_URL + "/resources/senseparking/leaving-auto.gif"}
                   width={400}
                 />
                 <Imglefttwo
                   img={[
-                    "../resources/senseparking/leaving.gif",
-                    "../Resources/senseparking/autopay.gif",
+                    process.env.PUBLIC_URL + "/resources/senseparking/leaving.gif",
+                    process.env.PUBLIC_URL + "/resources/senseparking/autopay.gif",
                   ]}
                   width={[400, 400]}
                   des={
@@ -281,7 +281,7 @@ class Nio extends Component {
                       re-billing.
                     </p>
                   }
-                  img="../resources/senseparking/payagain.gif"
+                  img={process.env.PUBLIC_URL + "/resources/senseparking/payagain.gif"}
                   width={400}
                 />
 
@@ -301,7 +301,7 @@ class Nio extends Component {
                       electronic invoices can be issued.
                     </p>
                   }
-                  img="../resources/senseparking/info.gif"
+                  img={process.env.PUBLIC_URL + "/resources/senseparking/info.gif"}
                   width={400}
                 />
               </section>
@@ -329,8 +329,8 @@ class Nio extends Component {
         </div>
         <Footer />
       </div>
-    );
+    )
   }
 }
 
-export default Nio;
+export default Nio

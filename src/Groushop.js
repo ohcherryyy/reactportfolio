@@ -1,17 +1,17 @@
-import React, { Component } from "react";
-import Header from "./Content/Header";
-import Nav from "./Content/Nav";
-import "./Content/Content.css";
-import "./Portfolio.css";
-import Img from "./Content/Image";
-import Titleimg from "./Content/Titleimg";
-import Work from "./Work";
-import Footer from "./Content/Footer";
-import { Link } from "react-router-dom";
+import React, { Component } from "react"
+import Header from "./Content/Header"
+import Nav from "./Content/Nav"
+import "./Content/Content.css"
+import "./Portfolio.css"
+import Img from "./Content/Image"
+import Titleimg from "./Content/Titleimg"
+import Work from "./Work"
+import Footer from "./Content/Footer"
+import { Link } from "react-router-dom"
 
 class Group extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       navtitle: [
         { title: "Problem Statement", href: "#bg" },
@@ -20,14 +20,14 @@ class Group extends Component {
         { title: "QOC", href: "#qoc" },
         { title: "Prototyping", href: "#prototype" },
       ],
-      href: ["bg", "story", "paper", "qoc","prototype"],
-    };
+      href: ["bg", "story", "paper", "qoc", "prototype"],
+    }
   }
 
-  render() {
+  render () {
     return (
       <div>
-        <Header img="../resources/Groushop/groushopbanner.png" />
+        <Header img={process.env.PUBLIC_URL + "/resources/Groushop/groushopbanner.png"} />
         <div className="gridlayout">
           <Nav title={this.state.navtitle} href={this.state.href} />
           <div className="container majorcontent">
@@ -57,7 +57,7 @@ class Group extends Component {
                 <div className="row">
                   <div className="col-md-12">
                     <img
-                      src="../resources/Groushop/problem.png"
+                      src={process.env.PUBLIC_URL + "/resources/Groushop/problem.png"}
                       style={{ maxWidth: 900 + "px" }}
                     ></img>
                   </div>
@@ -73,7 +73,7 @@ class Group extends Component {
                   </div>
                   <div className="col-md-12">
                     <img
-                      src="../resources/Groushop/Approaches.png"
+                      src={process.env.PUBLIC_URL + "/resources/Groushop/Approaches.png"}
                       style={{ maxWidth: 500 + "px" }}
                     />
                   </div>
@@ -84,13 +84,13 @@ class Group extends Component {
                   </div>
                   <div className="col-md-12">
                     <img
-                      src="../resources/Groushop/Flows.png"
+                      src={process.env.PUBLIC_URL + "/resources/Groushop/Flows.png"}
                       style={{ maxWidth: 900 + "px" }}
                     />
                   </div>
                   <div className="col-md-12">
                     <img
-                      src="../resources/Groushop/Flows1.png"
+                      src={process.env.PUBLIC_URL + "/resources/Groushop/Flows1.png"}
                       style={{ maxWidth: 900 + "px" }}
                     />
                   </div>
@@ -106,7 +106,7 @@ class Group extends Component {
                 <div className="row" style={{ marginTop: 30 + "px" }}>
                   <Img
                     title="Annoying group issues"
-                    img="../resources/Groushop/decision.png"
+                    img={process.env.PUBLIC_URL + "/resources/Groushop/decision.png"}
                     width={900}
                   />
                 </div>
@@ -142,13 +142,13 @@ class Group extends Component {
               <Titleimg
                 id="story"
                 title="Storymapping"
-                img="../resources/Groushop/storymapping.png"
+                img={process.env.PUBLIC_URL + "/resources/Groushop/storymapping.png"}
                 width={1000}
               />
               <Titleimg
                 id="paper"
                 title="Paper Prototype"
-                img="../resources/Groushop/paper.jpg"
+                img={process.env.PUBLIC_URL + "/resources/Groushop/paper.jpg"}
                 width={800}
               />
               <div className="row">
@@ -182,7 +182,7 @@ class Group extends Component {
                 <div className="row">
                   <div className="col-md-12">
                     <img
-                      src="../resources/Groushop/paymentqoc.png"
+                      src={process.env.PUBLIC_URL + "/resources/Groushop/paymentqoc.png"}
                       style={{ maxWidth: 800 + "px" }}
                     />
                   </div>
@@ -190,7 +190,7 @@ class Group extends Component {
                 <div className="row" style={{ marginTop: 30 + "px" }}>
                   <div className="col-md-12">
                     <img
-                      src="../resources/Groushop/joinleave.png"
+                      src={process.env.PUBLIC_URL + "/resources/Groushop/joinleave.png"}
                       style={{ maxWidth: 800 + "px" }}
                     />
                   </div>
@@ -212,19 +212,19 @@ class Group extends Component {
                   </div>
                   <div className="col-md-2">
                     <img
-                      src="../resources/Groushop/low.png"
+                      src={process.env.PUBLIC_URL + "/resources/Groushop/low.png"}
                       style={{ maxWidth: 150 + "px" }}
                     />
                   </div>
                   <div className="col-md-2">
                     <img
-                      src="../resources/Groushop/part.png"
+                      src={process.env.PUBLIC_URL + "/resources/Groushop/part.png"}
                       style={{ maxWidth: 150 + "px" }}
                     />
                   </div>
                   <div className="col-md-2">
                     <img
-                      src="../resources/Groushop/zero.png"
+                      src={process.env.PUBLIC_URL + "/resources/Groushop/zero.png"}
                       style={{ maxWidth: 150 + "px" }}
                     />
                   </div>
@@ -232,7 +232,7 @@ class Group extends Component {
                 <div className="row" style={{ marginTop: 30 + "px" }}>
                   <div className="col-md-12">
                     <img
-                      src="../Resources/Groushop/group.png"
+                      src={process.env.PUBLIC_URL + "/resources/Groushop/group.png"}
                       style={{ maxWidth: 800 + "px" }}
                     />
                   </div>
@@ -243,7 +243,7 @@ class Group extends Component {
 
                 <Img
                   title="Final workflow"
-                  img="../resources/Groushop/workflow.png"
+                  img={process.env.PUBLIC_URL + "/resources/Groushop/workflow.png"}
                   width={800}
                 />
                 <div className="row" style={{ marginTop: 40 + "px" }}>
@@ -279,11 +279,11 @@ class Group extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div >
         <Footer />
-      </div>
-    );
+      </div >
+    )
   }
 }
 
-export default Group;
+export default Group

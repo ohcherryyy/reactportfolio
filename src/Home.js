@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import Work from "./Work";
+import React, { Component } from "react"
+import Work from "./Work"
 import './index.css'
-import Footer from "./Content/Footer";
+import Footer from "./Content/Footer"
 
 class Home extends Component {
-  render() {
+  render () {
     return (
       <div className="container-fluid">
         <div className="gridlayout">
@@ -21,7 +21,7 @@ class Home extends Component {
                 <a href="#me">
                   Hi, this is Xiaoyan
                   <img
-                    src="../resources/icon.png"
+                    src={process.env.PUBLIC_URL + "/resources/icon.png"}
                     alt="letter w"
                     className="titleicon"
                   />
@@ -45,7 +45,7 @@ class Home extends Component {
                 </div>
 
                 <div>
-                  <a href="../Resources/XiaoyanWu_Umich_UX.pdf" target="_blank">
+                  <a href={process.env.PUBLIC_URL + "/resources/XiaoyanWu_Umich_UX.pdf"} target="_blank" rel="noreferrer">
                     <button className="btnstyle">Resume</button>
                   </a>
                 </div>
@@ -64,7 +64,7 @@ class Home extends Component {
 
               <div
                 className="col-md-12"
-                style={{color: "#8b8b8b",fontSize: 180+"%"}}
+                style={{ color: "#8b8b8b", fontSize: 180 + "%" }}
               >
                 <p>Xiaoyan Wu</p>
               </div>
@@ -122,8 +122,8 @@ class Home extends Component {
         </div>
         <Footer />
       </div>
-    );
+    )
   }
 }
 
-export default Home;
+export default Home
