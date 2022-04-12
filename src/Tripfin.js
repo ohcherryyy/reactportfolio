@@ -9,6 +9,7 @@ import Work from "./Work"
 import { Link } from "react-router-dom"
 import Footer from "./Content/Footer"
 import "bootstrap/dist/css/bootstrap.css"
+import Bullet from "./Content/Bullet"
 
 class Trip extends Component {
   constructor(props) {
@@ -91,28 +92,14 @@ class Trip extends Component {
                 </p>
               </div>
               <div className="row">
-                <div className="col-md-12">
-                  <p className="description">
-                    Requirements from the business department
-                  </p>
-                </div>
-                <div className="col-md-12">
-                  <p className="description">
-                    1. Carry out new operational activity which is
-                    <span style={{ color: "#287dfa" }}>
-                      "double interest hike"
-                    </span>
-                    , in order to attract more newcomers through "double
-                    interest" strategy {"\n"}
-                    2. Attract users to invest in
-                    <span style={{ color: "#287dfa" }}>
-                      products that need to be held for a long time
-                    </span>
-                    {"\n"}
-                    3. Only for new users who have not invested since the event
-                    was launched
-                  </p>
-                </div>
+                <Bullet 
+                title="Requirements from the business department" 
+                point={[
+                  "1. Carry out new operational activity which is 'double interest hike', in order to attract more newcomers through 'double interest' strategy",
+                  "2. Attract users to invest in products that need to be held for a long time",
+                  "3. Only for new users who have not invested since the event was launched"
+                  ]} />
+                
                 <section id="problem">
                   <h2 className="title" id="problem">
                     Problem Statement

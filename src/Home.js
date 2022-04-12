@@ -9,11 +9,6 @@ class Home extends Component {
       <div className="container-fluid">
         <div className="gridlayout">
           <div className="navbar">
-            <div className="switchlan">
-              <p>
-                <a href="../Chinese/index.html">Chinese</a>/En
-              </p>
-            </div>
           </div>
           <header className="pos">
             <div className="topbanner">

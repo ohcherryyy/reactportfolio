@@ -2,32 +2,26 @@ import React, { Component, Fragment } from "react";
 import "./Content.css";
 import "../Portfolio.css";
 
-class Titleimg extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <Fragment>
-        <section id={this.props.id}>
-          <h2 className="title" id={this.props.id}>
-            {this.props.title}
-          </h2>
-        
-        <div className="row">
-          <div className="col-md-12">
-            <img
-              src={this.props.img}
-              className="col-md-12 img-responsive"
-              style={{ maxWidth: this.props.width + "px" }}
-            />
-          </div>
+function Titleimg(props){
+  return (
+    <Fragment>
+      <section id={props.id}>
+        <h2 className="title" id={props.id}>
+          {props.title}
+        </h2>
+      
+      <div className="row">
+        <div className="col-md-12">
+          <img
+            src={props.img}
+            className="col-md-12 img-responsive"
+            style={{ maxWidth: props.width + "px" }}
+          />
         </div>
-        </section>
-      </Fragment>
-    );
-  }
+      </div>
+      </section>
+    </Fragment>
+  );
 }
 
 export default Titleimg;

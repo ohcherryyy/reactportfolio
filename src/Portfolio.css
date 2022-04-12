@@ -4,7 +4,7 @@ ul{
   }
   .gridlayout {
       display: grid;
-      grid-template-columns: 1fr 6fr 1fr;
+      grid-template-columns: 1.5fr 5fr 1.5fr;
       grid-template-rows: auto auto;
     }
     .banner {
@@ -66,7 +66,7 @@ ul{
       width: 30px;
     }
     .majorcontent{
-      max-width: 1000px;
+      max-width: 900px;
       grid-column: 2/3;
       grid-row: 1/2;
     }

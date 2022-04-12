@@ -9,7 +9,7 @@ class Work extends Component {
     this.state = {
       designboxObj: [
         {
-          name: "Product Recommendation Page for new comers @ Trip.com Group",
+          name: "Product strategy @ Trip.com",
           img: process.env.PUBLIC_URL + "/resources/boximg/tripfinbox.png",
           url: "/tripfin",
         },
