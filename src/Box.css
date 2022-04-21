@@ -12,6 +12,11 @@
     margin: auto;
   }
 
+  .charts{
+    max-width: 1140px;
+    height: 100vh;
+  }
+
   .boxes .row{
     max-width: 1140px; 
     margin: auto

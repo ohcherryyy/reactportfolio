@@ -1,4 +1,6 @@
 import React, { Fragment } from "react";
+import "./Content.css";
+import "../Portfolio.css"
 
 function Header(props){
   return (
@@ -8,6 +10,7 @@ function Header(props){
           <img
             src={props.img}
             className="img-responsive"
+            style={{maxWidth:props.width+'px'}}
           />
         </div>
       </header>

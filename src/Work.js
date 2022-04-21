@@ -28,11 +28,11 @@ class Work extends Component {
         //   img: process.env.PUBLIC_URL+"/resources/boximg/courseBOX.png",
         //   url: "",
         // },
-        // {
-        //   name: "AR tourism map for historical architectures",
-        //   img: process.env.PUBLIC_URL+"/resources/boximg/ARBOX.png",
-        //   url: "",
-        // },
+        {
+          name: "AR tourism map for historical architectures",
+          img: process.env.PUBLIC_URL+"/resources/boximg/ARBOX.png",
+          url: "/ar",
+        },
       ],
       visboxObj: [
         {

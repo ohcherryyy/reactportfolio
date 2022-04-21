@@ -1,19 +1,21 @@
-import React, { Component, Fragment } from "react"
-import Header from "./Content/Header"
-import Img from "./Content/Image"
-import Nav from "./Content/Nav"
-import "./Content/Content.css"
-import "./Portfolio.css"
-import Titleimg from "./Content/Titleimg"
-import Work from "./Work"
-import { Link } from "react-router-dom"
-import Footer from "./Content/Footer"
-import "bootstrap/dist/css/bootstrap.css"
-import Bullet from "./Content/Bullet"
+import React, { Component } from "react";
+import Header from "./Content/Header";
+import Img from "./Content/Image";
+import Nav from "./Content/Nav";
+import "./Content/Content.css";
+import "./Portfolio.css";
+import Titleimg from "./Content/Titleimg";
+import Work from "./Work";
+import { Link } from "react-router-dom";
+import Footer from "./Content/Footer";
+import "bootstrap/dist/css/bootstrap.css";
+import Bullet from "./Content/Bullet";
+import Imglefttwo from "./Content/Imglefttwo";
+import Imgright from "./Content/Imgright";
 
 class Trip extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       navtitle: [
         { title: "Background", href: "#bg" },
@@ -25,14 +27,25 @@ class Trip extends Component {
         { title: "Prototyping", href: "#prototype" },
         { title: "Summary", href: "#final" },
       ],
-      href: ["bg", "problem", "research", "prep", "workflow", "wireframe", "prototype", "final"]
-    }
+      href: [
+        "bg",
+        "problem",
+        "research",
+        "prep",
+        "workflow",
+        "wireframe",
+        "prototype",
+        "final",
+      ],
+    };
   }
 
-  render () {
+  render() {
     return (
       <div>
-        <Header img={process.env.PUBLIC_URL + "/resources/tripfin/tripbanner.png"} />
+        <Header
+          img={process.env.PUBLIC_URL + "/resources/tripfin/tripbanner.png"}
+        />
         <div className="gridLayout">
           <Nav title={this.state.navtitle} href={this.state.href} />
           <div className="container majorcontent">
@@ -92,14 +105,15 @@ class Trip extends Component {
                 </p>
               </div>
               <div className="row">
-                <Bullet 
-                title="Requirements from the business department" 
-                point={[
-                  "1. Carry out new operational activity which is 'double interest hike', in order to attract more newcomers through 'double interest' strategy",
-                  "2. Attract users to invest in products that need to be held for a long time",
-                  "3. Only for new users who have not invested since the event was launched"
-                  ]} />
-                
+                <Bullet
+                  title="Requirements from the business department"
+                  point={[
+                    "1. Carry out new operational activity which is 'double interest hike', in order to attract more newcomers through 'double interest' strategy",
+                    "2. Attract users to invest in products that need to be held for a long time",
+                    "3. Only for new users who have not invested since the event was launched",
+                  ]}
+                />
+
                 <section id="problem">
                   <h2 className="title" id="problem">
                     Problem Statement
@@ -110,7 +124,10 @@ class Trip extends Component {
                 {"\n"}
                 <Img
                   title="Voucher Process"
-                  img={process.env.PUBLIC_URL + "/resources/tripfin/couponprocess-en.png"}
+                  img={
+                    process.env.PUBLIC_URL +
+                    "/resources/tripfin/couponprocess-en.png"
+                  }
                   width={1000}
                 />
                 {"\n"}
@@ -118,7 +135,9 @@ class Trip extends Component {
                 {"\n"}
                 <Img
                   title="Homepage for newcomers"
-                  img={process.env.PUBLIC_URL + "/resources/tripfin/homepage.png"}
+                  img={
+                    process.env.PUBLIC_URL + "/resources/tripfin/homepage.png"
+                  }
                   width={900}
                 />
                 <section id="research">
@@ -128,7 +147,10 @@ class Trip extends Component {
                 <div className="row">
                   <div className="col-md-12">
                     <img
-                      src={process.env.PUBLIC_URL + "/resources/tripfin/competitors.png"}
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/resources/tripfin/competitors.png"
+                      }
                       style={{ maxWidth: 900 + "px" }}
                     />
                   </div>
@@ -143,7 +165,10 @@ class Trip extends Component {
                       characteristics are summarized.
                     </p>
                     <img
-                      src={process.env.PUBLIC_URL + "/resources/tripfin/competitorfeat-en.png"}
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/resources/tripfin/competitorfeat-en.png"
+                      }
                       className="col-md-12"
                     />
                   </div>
@@ -211,7 +236,10 @@ class Trip extends Component {
                       </p>
                       {"\n"}
                       <img
-                        src={process.env.PUBLIC_URL + "/resources/tripfin/cautious-en.png"}
+                        src={
+                          process.env.PUBLIC_URL +
+                          "/resources/tripfin/cautious-en.png"
+                        }
                         className="col-md-12"
                         style={{ maxWidth: 1000 + "px" }}
                       />
@@ -219,7 +247,10 @@ class Trip extends Component {
                     <Titleimg
                       title="UX workflow"
                       id="workflow"
-                      img={process.env.PUBLIC_URL + "/resources/tripfin/workflow-en.png"}
+                      img={
+                        process.env.PUBLIC_URL +
+                        "/resources/tripfin/workflow-en.png"
+                      }
                       width={1000}
                     />
                     <section id="wireframe">
@@ -231,7 +262,10 @@ class Trip extends Component {
                     <div className="row" style={{ textAlign: "center" }}>
                       <div className="col-md-5">
                         <img
-                          src={process.env.PUBLIC_URL + "/resources/tripfin/mainpage.png"}
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/resources/tripfin/mainpage.png"
+                          }
                           className="col-md-12 img-responsive"
                           style={{
                             maxWidth: 250 + "px",
@@ -244,7 +278,10 @@ class Trip extends Component {
                       {"\n"}
                       <div className="col-md-7">
                         <img
-                          src={process.env.PUBLIC_URL + "/resources/tripfin/maininfo-en.png"}
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/resources/tripfin/maininfo-en.png"
+                          }
                           className="col-md-12 img-responsive"
                           style={{
                             maxWidth: 330 + "px",
@@ -257,72 +294,48 @@ class Trip extends Component {
                     {"\n"}
                     {"\n"}
                     {"\n"}
-                    <div className="row" style={{ textAlign: "left" }}>
-                      <div className="col-md-4">
-                        <img
-                          src={process.env.PUBLIC_URL + "/resources/tripfin/双倍加息售罄.png"}
-                          className="col-md-12 img-responsive"
-                          style={{
-                            maxWidth: 280 + "px",
-                            marginBottom: 50 + "px",
-                          }}
-                        />
-                      </div>
-                      <div className="col-md-4">
-                        <img
-                          src={process.env.PUBLIC_URL + "/resources/tripfin/产品售罄.png"}
-                          className="col-md-12 img-responsive"
-                          style={{ maxWidth: 280 + "px" }}
-                        />
-                      </div>
-                      <div className="col-md-4">
-                        {"\n"}
-                        {"\n"}
-                        {"\n"}
-                        {"\n"}
-                        {"\n"}
-                        {"\n"}
-                        {"\n"}
+                    <Imglefttwo
+                      img={[
+                        process.env.PUBLIC_URL +
+                          "/resources/tripfin/双倍加息售罄.png",
+                        process.env.PUBLIC_URL +
+                          "/resources/tripfin/产品售罄.png",
+                      ]}
+                      width={[280, 280]}
+                      des={
                         <p className="description">
                           The product list is mainly divided into two states
-                          {"\n"}
+                          <br />
                           1. When the double interest rate hike quota is sold
                           out, click the button to purchase at the original
                           interest rate
-                          {"\n"}
+                          <br />
                           2. After the product is sold out, it cannot be
                           purchased
                         </p>
-                      </div>
-                    </div>
-                    {"\n"}
-                    {"\n"}
-                    {"\n"}
-                    {"\n"}
-                    <div className="row" style={{ textAlign: "center" }}>
-                      <div className="col-md-6">
-                        <img
-                          src={process.env.PUBLIC_URL + "/resources/tripfin/屏蔽策略.png"}
-                          className="col-md-12 img-responsive"
-                          style={{ maxWidth: 280 + "px" }}
-                        />
-                      </div>
-                      <div className="col-md-6">
-                        {"\n"}
-                        {"\n"}
-                        {"\n"}
-                        {"\n"}
-                        {"\n"}
-                        {"\n"}
-                        {"\n"}
+                      }
+                    />
 
+                    {"\n"}
+                    {"\n"}
+                    {"\n"}
+                    {"\n"}
+
+                    <Imgright
+                      img={
+                        process.env.PUBLIC_URL +
+                        "/resources/tripfin/屏蔽策略.png"
+                      }
+                      width={280}
+                      des={
                         <p className="description">
                           When the blocking strategy of the account is obtained,
                           the products to be blocked are hidden and the products
                           that are not blocked are displayed.
                         </p>
-                      </div>
-                    </div>
+                      }
+                    />
+
                     {"\n"}
                     {"\n"}
                     {"\n"}
@@ -338,7 +351,10 @@ class Trip extends Component {
                     <div className="row" style={{ textAlign: "center" }}>
                       <div className="col-md-12">
                         <img
-                          src={process.env.PUBLIC_URL + "/resources/tripfin/first-en@2x.png"}
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/resources/tripfin/first-en@2x.png"
+                          }
                           className="col-md-12 img-responsive"
                         />
                       </div>
@@ -350,7 +366,10 @@ class Trip extends Component {
                     <div className="row" style={{ textAlign: "center" }}>
                       <div className="col-md-12">
                         <img
-                          src={process.env.PUBLIC_URL + "/resources/tripfin/second-en@2x.png"}
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/resources/tripfin/second-en@2x.png"
+                          }
                           className="col-md-12 img-responsive"
                         />
                       </div>
@@ -359,7 +378,10 @@ class Trip extends Component {
                     <div className="row" style={{ textAlign: "center" }}>
                       <div className="col-md-12">
                         <img
-                          src={process.env.PUBLIC_URL + "/resources/tripfin/third-en@2x.png"}
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/resources/tripfin/third-en@2x.png"
+                          }
                           className="col-md-12 img-responsive"
                         />
                       </div>
@@ -373,14 +395,20 @@ class Trip extends Component {
                     <div className="row">
                       <div className="col-md-6">
                         <img
-                          src={process.env.PUBLIC_URL + "/resources/tripfin/IMG_5743.JPG"}
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/resources/tripfin/IMG_5743.JPG"
+                          }
                           className="col-md-12 img-responsive"
                           style={{ maxWidth: 250 + "px" }}
                         />
                       </div>
                       <div className="col-md-6">
                         <img
-                          src={process.env.PUBLIC_URL + "/resources/tripfin/IMG_5745.JPG"}
+                          src={
+                            process.env.PUBLIC_URL +
+                            "/resources/tripfin/IMG_5745.JPG"
+                          }
                           className="col-md-12 img-responsive"
                           style={{ maxWidth: 250 + "px" }}
                         />
@@ -447,8 +475,8 @@ class Trip extends Component {
         </div>
         <Footer />
       </div>
-    )
+    );
   }
 }
 
-export default Trip
+export default Trip;

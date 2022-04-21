@@ -6,6 +6,7 @@ import "./Content/Content.css";
 import Trip from "./Tripfin";
 import Group from "./Groushop";
 import Nio from "./NIO";
+import ARtour from "./AR";
 
 function scroll() {
   window.addEventListener("scroll", function () {
@@ -33,6 +34,9 @@ function Content() {
     return <Trip />;
   } else if (page === "groushop") {
     return <Group />;
+  }
+  else if(page=="ar"){
+    return <ARtour />
   }
   else if (page === "nio") {
     return <Nio />;

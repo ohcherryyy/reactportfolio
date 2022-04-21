@@ -305,9 +305,7 @@ class Nio extends Component {
                   width={400}
                 />
               </section>
-            </div>
-          </div>
-          <div
+              <div
             className="container-fluid"
             style={{ gridRow: 2 / 3, gridColumn: 2 / 3 }}
           >
@@ -326,6 +324,9 @@ class Nio extends Component {
               </div>
             </div>
           </div>
+            </div>
+          </div>
+          
         </div>
         <Footer />
       </div>
