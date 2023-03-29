@@ -7,6 +7,7 @@ import Trip from "./Tripfin";
 import Group from "./Groushop";
 import Nio from "./NIO";
 import ARtour from "./AR";
+import Customer from "./Customerjourney";
 
 function scroll() {
   window.addEventListener("scroll", function () {
@@ -37,6 +38,9 @@ function Content() {
   }
   else if(page==="ar"){
     return <ARtour />
+  }
+  else if(page==="customer"){
+    return <Customer />
   }
   else if (page === "nio") {
     return <Nio />;

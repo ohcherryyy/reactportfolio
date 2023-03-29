@@ -8,11 +8,12 @@ function Imgleft(props){
             {props.des}
         </div>
         <div className="col-md-6">
-          <img
+            <img
             src={props.img}
             className="col-md-12 img-responsive"
             style={{display: "inline-block", maxWidth: props.width+"px"}}
           />
+          
         </div>
       </div>
  );

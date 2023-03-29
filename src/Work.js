@@ -14,6 +14,11 @@ class Work extends Component {
           url: "/tripfin",
         },
         {
+          name: "Cutomer journey mapping @ Blom Meadeworks",
+          img: process.env.PUBLIC_URL + "/resources/boximg/customerbox.png",
+          url: "/customer",
+        },
+        {
           name: "Senseless parking @ NIO",
           img: process.env.PUBLIC_URL + "/resources/boximg/parkingbox.png",
           url: "/nio",

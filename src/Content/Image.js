@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 import './Content.css'
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
 function Img(props){
   return ( 
@@ -11,11 +13,14 @@ function Img(props){
         {props.title}
       </p>
       <br />
-      <img
+      <Zoom>
+        <img
         src={props.img}
         className="col-md-12 img-responsive"
         style={{maxWidth:props.width+'px'}}
       />
+      </Zoom>
+      
     </div>
     </Fragment>
     
