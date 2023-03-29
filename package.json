@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://portfolio.cheryloh.com/reactportfolio",
+  "homepage": "https://portfolio.cheryloh.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
