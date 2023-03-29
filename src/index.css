@@ -137,24 +137,23 @@ a:hover {
 }
 
 .btnstylec {
-  border: 2px solid #888888;
+  border: 0px;
   height: 50px;
   width: 50px;
   border-radius: 1em;
   font-size: 100%;
   letter-spacing: 2px;
   background-color: transparent;
-  color: #888888;
+  text-align: center;
 }
 .btnstylec:hover {
-  border: 2px solid #888888;
+  border: 0px;
   height: 50px;
   width: 50px;
   border-radius: 1em;
   font-size: 100%;
   letter-spacing: 2px;
-  background-color: #ddddddb6;
-  color: #4b4b4b;
+  background-color: transparent;
 }
 .content {
   grid-column-start: 2;
@@ -189,12 +188,14 @@ a:hover {
 }
 
 .contactinfo{
+  padding-top: 5px;
   font-size: 105%;
   color: #8b8b8b;
 }
 
 .mail{
-  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 .imgrounded {

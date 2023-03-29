@@ -80,8 +80,8 @@ class Trip extends Component {
               <div className="row">
                 <Img
                   title="Current Situation"
-                  img={process.env.PUBLIC_URL + "/resources/tripfin/现状.png"}
-                  width={800}
+                  img={process.env.PUBLIC_URL + "/resources/tripfin/current situation.png"}
+                  width={1000}
                 />
               </div>
               <div
@@ -251,7 +251,7 @@ class Trip extends Component {
                         process.env.PUBLIC_URL +
                         "/resources/tripfin/workflow-en.png"
                       }
-                      width={1000}
+                      width={1200}
                     />
                     <section id="wireframe">
                       <h2 className="title">Wireframing</h2>

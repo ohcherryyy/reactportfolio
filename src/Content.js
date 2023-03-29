@@ -35,7 +35,7 @@ function Content() {
   } else if (page === "groushop") {
     return <Group />;
   }
-  else if(page=="ar"){
+  else if(page==="ar"){
     return <ARtour />
   }
   else if (page === "nio") {

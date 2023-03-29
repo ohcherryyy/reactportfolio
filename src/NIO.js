@@ -19,9 +19,9 @@ class Nio extends Component {
     this.state = {
       navtitle: [
         { title: "Value", href: "#bg" },
-        { title: "Define", href: "#problem" },
-        { title: "Structure", href: "#prep" },
-        { title: "Business process", href: "#workflow" },
+        { title: "User journey", href: "#problem" },
+        { title: "Brainstorming", href: "#prep" },
+        { title: "User flow", href: "#workflow" },
         { title: "Wireframing", href: "#wireframe" },
         { title: "Prototyping", href: "#prototype" },
       ],
@@ -43,7 +43,8 @@ class Nio extends Component {
                   <strong style={{ color: "#287dfa" }}>
                     my internship in Digital Cockpit department of NIO
                   </strong>
-                  . Through smart parking, we will further create a complete
+                  . Senseless parking provides a more convenient and intelligent way to park their cars and pay parking fees senselessly. 
+                  With this new feature, we will further create a complete
                   travel experience chain for car owners, and enhance the
                   intelligence capabilities of NIO's automotive scenes. I
                   participated in the process of the project from 0 to 1,
@@ -75,15 +76,15 @@ class Nio extends Component {
                 </div>
               </div>
               <Titleimg
-                title="Define"
+                title="User journey: What are the pain points of the current parking experience?"
                 id="problem"
                 img={process.env.PUBLIC_URL + "/resources/senseparking/moodboard.png"}
-                width={1200}
+                width={1500}
               />
               <section id="prep">
-                <h2 className="title">Structure</h2>
+                <h2 className="title">Brainstorming</h2>
                 <Img
-                  title="Function diagram"
+                  title="Feature list"
                   img={process.env.PUBLIC_URL + "/resources/senseparking/structure.png"}
                   width={900}
                 />
@@ -94,7 +95,7 @@ class Nio extends Component {
                 />
               </section>
               <Titleimg
-                title="Business process"
+                title="User flow"
                 id="workflow"
                 img={process.env.PUBLIC_URL + "/resources/senseparking/process.png"}
                 width={800}

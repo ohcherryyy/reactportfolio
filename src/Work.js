@@ -14,25 +14,26 @@ class Work extends Component {
           url: "/tripfin",
         },
         {
+          name: "Senseless parking @ NIO",
+          img: process.env.PUBLIC_URL + "/resources/boximg/parkingbox.png",
+          url: "/nio",
+        },
+        {
           name: "Groushop",
           img: process.env.PUBLIC_URL + "/resources/boximg/groubox.png",
           url: "/groushop",
         },
-        {
-          name: "Sense parking @ NIO",
-          img: process.env.PUBLIC_URL + "/resources/boximg/parkingbox.png",
-          url: "/nio",
-        },
+        
         // {
         //   name: "Course registration system",
         //   img: process.env.PUBLIC_URL+"/resources/boximg/courseBOX.png",
         //   url: "",
         // },
-        {
-          name: "AR tourism map for historical architectures",
-          img: process.env.PUBLIC_URL+"/resources/boximg/ARBOX.png",
-          url: "/ar",
-        },
+        // {
+        //   name: "AR tourism map for historical architectures",
+        //   img: process.env.PUBLIC_URL+"/resources/boximg/ARBOX.png",
+        //   url: "/ar",
+        // },
       ],
       visboxObj: [
         {
