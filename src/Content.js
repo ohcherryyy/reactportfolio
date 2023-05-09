@@ -50,6 +50,9 @@ function Content() {
   else if (page === "covid") {
     window.location.href = "https://ohcherryyy.github.io/covidvisual/";
   }
+  else if (page === "radio") {
+    window.location.href = "https://languid-booklet-224.notion.site/Search-Minutes-Alert-system-e0a4921683f84a1bb9e3938b4e240086";
+  }
 }
 
 export default Content;

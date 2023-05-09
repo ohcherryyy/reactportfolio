@@ -9,6 +9,11 @@ class Work extends Component {
     this.state = {
       designboxObj: [
         {
+          name: "Search Minutes Alert system @ Michigan Radio",
+          img: process.env.PUBLIC_URL + "/resources/boximg/radiobox.png",
+          url: "/radio",
+        },
+        {
           name: "Product recommendation page @ Trip.com",
           img: process.env.PUBLIC_URL + "/resources/boximg/tripfinbox.png",
           url: "/tripfin",
@@ -77,7 +82,7 @@ class Work extends Component {
             })}
           </div>
         </div>
-        <div className="boxes">
+        <div className="boxes" style={{marginTop: '20px'}}>
           <div className="row">
             <div className="col-md-4" style={{ textAlign: "left" }}>
               <p className="category">Data Visualization</p>

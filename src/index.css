@@ -69,17 +69,74 @@ a:hover {
   width: 8%;
 }
 
-.topbanner {
-  text-align: center;
-  margin: auto;
-  width: 70%;
+@media (width < 1280px)  {
+  .topbanner {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+  }
+  .bannertext {
+    letter-spacing: 2px;
+    color: #888888;
+    font-size: 180%;
+    margin-bottom: 20px;
+  }
 }
 
-.bannertext {
-  letter-spacing: 2px;
-  color: #888888;
-  font-size: 300%;
-  margin-bottom: 20px;
+@media (1280px <= width < 1340px)  {
+  .topbanner {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+  }
+  .bannertext {
+    letter-spacing: 2px;
+    color: #888888;
+    font-size: 200%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (1340px <= width < 1530px)  {
+  .topbanner {
+    text-align: center;
+    margin: auto;
+    width: 70%;
+  }
+  .bannertext {
+    letter-spacing: 2px;
+    color: #888888;
+    font-size: 230%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (1530px <= width < 1920px)  {
+  .topbanner {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+  }
+  .bannertext {
+    letter-spacing: 2px;
+    color: #888888;
+    font-size: 250%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (width >= 1920px)  {
+  .topbanner {
+    text-align: center;
+    margin: auto;
+    width: 55%;
+  }
+  .bannertext {
+    letter-spacing: 2px;
+    color: #888888;
+    font-size: 280%;
+    margin-bottom: 20px;
+  }
 }
 
 .bannertext a {
